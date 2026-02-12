@@ -7,7 +7,9 @@
       "Bash(/opt/homebrew/bin/hugo:*)",
       "Bash(gh auth:*)",
       "Bash(git --version)",
-      "Bash(git -C /Users/wolfgang/Library/CloudStorage/ProtonDrive-wolfgang_mayerwieser.xm@pm.me-folder/Work/mayerwieser.com init:*)"
+      "Bash(git -C /Users/wolfgang/Library/CloudStorage/ProtonDrive-wolfgang_mayerwieser.xm@pm.me-folder/Work/mayerwieser.com init:*)",
+      "Bash(dig:*)",
+      "Bash(curl:*)"
     ]
   }
 }
