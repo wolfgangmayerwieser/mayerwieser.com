@@ -1,0 +1,28 @@
+baseURL = 'https://mayerwieser.com/'
+languageCode = 'en'
+title = 'Wolfgang Mayerwieser'
+
+[params]
+  description = 'Personal site and project portfolio'
+  author = 'Wolfgang Mayerwieser'
+
+[menu]
+  [[menu.main]]
+    name = 'Projects'
+    url = '/projects/'
+    weight = 1
+  [[menu.main]]
+    name = 'About'
+    url = '/about/'
+    weight = 2
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[outputs]
+  home = ['HTML']
+  section = ['HTML']
+  taxonomy = ['HTML']
+  term = ['HTML']

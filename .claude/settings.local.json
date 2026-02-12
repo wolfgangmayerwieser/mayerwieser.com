@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo version:*)",
+      "Bash(hugo new site:*)",
+      "Bash(/opt/homebrew/bin/hugo new site:*)",
+      "Bash(/opt/homebrew/bin/hugo:*)",
+      "Bash(gh auth:*)",
+      "Bash(git --version)",
+      "Bash(git -C /Users/wolfgang/Library/CloudStorage/ProtonDrive-wolfgang_mayerwieser.xm@pm.me-folder/Work/mayerwieser.com init:*)"
+    ]
+  }
+}

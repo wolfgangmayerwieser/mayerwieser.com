@@ -1,0 +1,29 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ .Site.Title }}</h1>
+  <p>{{ .Site.Params.description }}</p>
+</section>
+
+{{ with .Site.GetPage "/projects" }}
+  {{ $projects := .Pages }}
+  {{ if $projects }}
+  <section class="projects-preview">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      {{ range $projects }}
+      <article class="project-card">
+        <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ with .Params.summary }}<p>{{ . }}</p>{{ end }}
+        {{ with .Params.tags }}
+        <div class="tags">
+          {{ range . }}<span class="tag">{{ . }}</span>{{ end }}
+        </div>
+        {{ end }}
+      </article>
+      {{ end }}
+    </div>
+    <p><a href="/projects/">View all projects</a></p>
+  </section>
+  {{ end }}
+{{ end }}
+{{ end }}
